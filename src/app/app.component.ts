@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { DatabindingComponent } from './databinding';
+import { LifecycleComponent } from './lifecycle.component';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [DatabindingComponent]
+  directives: [LifecycleComponent]
 })
 export class AppComponent {
   title = 'app works!';
+
+  delete = false;
+  test = 'Starting value';
+  boundValue = 1000;
 }
